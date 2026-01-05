@@ -1,0 +1,2 @@
+# omachitan.github.io
+wowowoow
