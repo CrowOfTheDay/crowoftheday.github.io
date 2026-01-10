@@ -1,2 +1,2 @@
-# My Really Cool Site
-Extra stuff from https://taph.nekoweb.org/ I think
+# info
+will be an "about me" website like the one in https://taph.nekoweb.org/ but better, maybe.
