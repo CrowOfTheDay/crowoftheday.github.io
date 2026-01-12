@@ -5,4 +5,5 @@ Feel free to look through the source code, it might inspire you, maybe.
 
 ## References
 > Here's a list of everything that I used to create certain parts of the website, you should look into them if you're interested in any part of the website.
+
 None yet!
