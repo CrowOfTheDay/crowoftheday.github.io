@@ -11,7 +11,7 @@ I tried making it look decent on mobile, hopefully there's not much of an issue.
 ## References
 Here's a list of everything that I used to create certain parts of the website, you should look into them if you're interested in any part of the website.
 > [!TIP]
-> For any image, just click on the image and it will direct you to the source, if there's none, I made it on my own.
+> For any image, just click on the image and it will direct you to the source, if there's none, I made it on my own, the image is official content from said franchise, or its credited here.
 
 > [!NOTE]
 > If an image that belongs to you is in the site, and you do not want it to be in there, please contact me through Twitter or Discord and I will remove it.
@@ -21,7 +21,7 @@ Here's a list of everything that I used to create certain parts of the website, 
 - [Catppuccin (Latte & Mocha)](https://catppuccin.com/) for the color scheme.
 - [Theme toggle code by Salma Alam-Naylor](https://dev.to/whitep4nth3r/the-best-lightdark-mode-theme-toggle-in-javascript-368f), slightly modified.
 - [Tabler Icons](https://github.com/tabler/tabler-icons) for the icons.
-- Google Fonts: [Jua](https://fonts.google.com/specimen/Jua) & [Delius](https://fonts.google.com/specimen/Delius) for the font.
+- [Google Fonts](https://fonts.google.com/): [Jua](https://fonts.google.com/specimen/Jua) & [Delius](https://fonts.google.com/specimen/Delius) for the font.
 - [tippy.js](https://atomiks.github.io/tippyjs/) for the pop up messages.
 
 ### About Me
