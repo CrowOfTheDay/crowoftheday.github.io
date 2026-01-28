@@ -1,0 +1,196 @@
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+
+    <title>About Me</title>
+    <link rel="icon" href="assets/favicon.ico"">
+    <style>
+        .form {
+            width: 100%;
+            height: 40%;
+            border-radius: 3px 3px 0 0;
+        }
+
+        @media only screen and (max-width: 1080px) {
+            .form {
+                height: 100%;
+            }
+        }
+
+        table {
+            width: 100%;
+            font-size: 0.95em;
+            color: var(--text);
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .underline {
+            text-decoration: dotted underline;
+            cursor: pointer;
+        }
+
+        .thumbnail {
+            width: 31%;
+            display: flex;
+            align-items: center;
+            background-color: var(--surface-0);
+            justify-content: center;
+            border-radius: 0 0 0 6px;
+            padding: 2%;
+        }
+
+        .info {
+            width: 65%;
+        }
+
+        @media only screen and (max-width: 1080px) {
+            .thumbnail {
+                width: 50%;
+                padding: 0%;
+            }
+
+            .info {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class=" container">
+    <button type="button" data-theme-toggle aria-label="Change to light theme" id="theme"></button>
+    <div class="tab">
+        <div class="header" dir="rtl">
+            <a href="https://crowoftheday.github.io" class="header-link home">home</a> |
+            <a href="byi" class="header-link byi">byi</a> |
+            <b>about</b> |
+            <a href="interests" class="header-link interests">interest</a> |
+            <a href="send" class="header-link send">send</a> |
+            <a href="https://github.com/CrowOfTheDay/crowoftheday.github.io" class="header-link source">source</a>
+        </div>
+        <div style="display: flex">
+            <div class="thumbnail">
+                <img src="assets/about.png" id="taph" width="100%">
+            </div>
+            <div class=" content info">
+                I'm some 18 year old university student on the internet that studies computer science (unfortunate).
+                I am known online as <b>Taph</b>, but I'm also known by many other names.
+                <br><br>
+                <!--yay flags-->
+                <a href="https://en.pronouns.page/terminology?filter=agender"><img title="Agender"
+                        style="image-rendering: pixelated;" src="https://badge.les.bi/88x31/agender/outset.png"
+                        width="44px" height="31px" id="agender"></a>
+                <a href="https://en.pronouns.page/terminology?filter=lesbian"><img title="Lesbian"
+                        style="image-rendering: pixelated;" src="https://badge.les.bi/88x31/lesbi/outset.png"
+                        width="44px" height="31px" id="lesbian"></a>
+                <a href="https://en.pronouns.page/terminology?filter=demisexual"><img title="Demisexual"
+                        style="image-rendering: pixelated;" src="https://badge.les.bi/88x31/demi/outset.png"
+                        width="44px" height="31px" id="demi"></a>
+                <br><br>
+                <table>
+                    <tr>
+                        <td class="bold">Pronouns</td>
+                        <td><a href="https://en.pronouns.page/u/subspaced" class="underline"
+                                id="pronoun">any/all</a><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="bold">Timezone</td>
+                        <td>GMT+7 (<b>Current Time:</b> <span id="timezone"></span>)</td>
+                    </tr>
+                    <tr>
+                        <td class="bold">Birthday</td>
+                        <td>6th December</td>
+                    </tr>
+                </table><br>
+                Here's some useless facts about me.
+                <ul>
+                    <li>I am Indonesian, unfortunately.</li>
+                    <li><span class="underline" id="tonetag">I use tonetags often</span>, <a href="https://tonetags.xyz"
+                            target="_blank">these</a> are what I
+                        usually use!
+                    </li>
+                    <li>You can usually find me playing games, <span class="underline" id="code">code</span>, or
+                        <span class="underline" id="draw">draw</span>.
+                    </li>
+                    <li>I love <span class="underline" id="spicy">spicy food</span>; I usually hate garlic and onions,
+                        but I
+                        like onion rings.</li>
+                </ul>
+                If you want to find me for whatever reason, I'm mostly active on Discord.
+                <table style="margin-top: 2%;">
+                    <tr>
+                        <td class="bold">Twitter</td>
+                        <td><a href="https://twitter.com/SubspacedIII">@SubspacedIII</a></td>
+                    </tr>
+                    <tr>
+                        <td class="bold">Discord</td>
+                        <td><a href="https://rentry.co/crowcord">@crowoftheday</a></td>
+                    </tr>
+                    <tr>
+                        <td class="bold">Roblox</td>
+                        <td><a href="https://www.roblox.com/users/393044500/profile">@crowoftheday</a></td>
+                    </tr>
+                    <tr>
+                        <td class="bold">Steam</td>
+                        <td><a href="https://steamcommunity.com/id/1xtaph/">subspaced</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="script/theme.js"></script>
+    <script src="script/time.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons-react/dist/index.umd.min.js"></script>
+    <!--stuff from tippy.js-->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script>
+        tippy('#taph', {
+            content: 'This is my Taph design, its literally just from a Taph cosplay I have in real life.',
+            theme: 'basic',
+        });
+        tippy('#agender', {
+            content: 'Agender',
+            theme: 'basic',
+        });
+        tippy('#lesbian', {
+            content: 'Lesbian',
+            theme: 'basic',
+        });
+        tippy('#demi', {
+            content: 'Demisexual',
+            theme: 'basic',
+        });
+        tippy('#pronoun', {
+            content: 'I have no preference towards any pronouns, but I do appreciate if you decide to switch up what pronoun to refer me with every once in a while',
+            theme: 'basic',
+        });
+        tippy('#tonetag', {
+            content: 'While I am able to understand messages without tonetags, I still need them because I misunderstand often. Thank you!',
+            theme: 'basic',
+        });
+        tippy('#code', {
+            content: 'I am still studying how to program, I am not an expert as of now. I know HTML, CSS, Javascript, C#, C++, Python.',
+            theme: 'basic',
+        });
+        tippy('#draw', {
+            content: 'I only do it as a hobby; I never draw seriously to the point where I fully render them. For now, its just something I have fun with doing!',
+            theme: 'basic',
+        });
+        tippy('#spicy', {
+            content: 'Especially sambal and Korean food!',
+            theme: 'basic',
+        });
+    </script>
+    </body>
+
+</html>

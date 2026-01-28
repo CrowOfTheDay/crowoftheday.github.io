@@ -1,0 +1,202 @@
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+
+    <title>Interests</title>
+    <link rel="icon" href="assets/favicon.ico">
+    <style>
+        .list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .item {
+            text-align: center;
+            padding: 1%;
+            width: 100px;
+        }
+
+        .thumbnail {
+            width: 100px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .subtitle {
+            padding: 5%;
+            color: var(--blue);
+            text-decoration: none;
+        }
+
+        .subtitle:hover {
+            text-decoration: underline;
+        }
+
+        .comment {
+            background-color: var(--surface-0);
+            color: var(--subtext-0);
+            padding: 1%;
+            border-radius: 3px;
+            margin-top: 1%;
+            margin-bottom: 1%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <button type="button" data-theme-toggle aria-label="Change to light theme" id="theme"></button>
+        <div class="tab game" id="main">
+            <div class="header" dir="rtl">
+                <a href="https://crowoftheday.github.io" class="header-link home">home</a> |
+                <a href="byi" class="header-link byi">byi</a> |
+                <a href="about" class="header-link about">about</a> |
+                <b>interest</b> |
+                <a href="send" class="header-link send">send</a> |
+                <a href="https://github.com/CrowOfTheDay/crowoftheday.github.io" class="header-link source">source</a>
+            </div>
+            <div class="content">
+                You can click my main interests for extra info, for the side ones,
+                you can simply hover over it and it'll reveal a small comment I have for said interest.
+                <h2>Main Interests</h2>
+                <div class="list">
+                    <div class="item" onclick="openGame('forsaken')" style="cursor: pointer;">
+                        <img src="assets/forsaken.png" class="thumbnail">
+                        <div class="subtitle">Forsaken</div>
+                    </div>
+                    <div class="item" onclick="openGame('vsynth')" style="cursor: pointer;">
+                        <img src="assets/vsynths.png" class="thumbnail">
+                        <div class="subtitle">VSynths</div>
+                    </div>
+                </div>
+                <h2>Others</h2>
+                <div class="list">
+                    <div class="item">
+                        <img src="assets/pjm.jpg" class="thumbnail" id="pjm">
+                        <div class="subtitle"><a href="https://store.steampowered.com/search/?developer=ProjectMoon"
+                                target="_blank">PJM</a></div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/nso.png" class="thumbnail" id="nso">
+                        <div class="subtitle"><a
+                                href="https://store.steampowered.com/app/1451940/NEEDY_STREAMER_OVERLOAD/"
+                                target="_blank">Needy
+                                Streamer</a></div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/kmtt.png" class="thumbnail" id="kmtt">
+                        <div class="subtitle"><a href="https://store.steampowered.com/app/2698470/Kemono_Teatime/"
+                                target="_blank">Kemono Teatime</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/utdr.jpg" class="thumbnail" id="utdr">
+                        <div class="subtitle"><a href="https://store.steampowered.com/developer/tobyfox/"
+                                target="_blank">UTDR</a></div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/bt.png" class="thumbnail" id="bt">
+                        <div class="subtitle"><a href="https://www.roblox.com/games/16483433878/Block-Tales"
+                                target="_blank">Block
+                                Tales</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab game" id="forsaken" style="display: none;">
+            <div class="header" dir="rtl">
+                <div onclick="openGame('main')" class="header-link interests" style="cursor: pointer;">go back to
+                    interests page</div>
+            </div>
+            <div class="content">
+                <b><u>I do not support the actions of Soul, or any of the current owners.</u></b><br>
+                I mostly engage with fan content like fanfics or fanart, I really like Taph if you cant tell.
+                <div class="comment">
+                    I personally think that the potential lore is nice, the concept of being "forsaken" can also be
+                    interesting too.
+                    I find the original characters neat, it also reintroduced me back to 1x1x1x1 (I used to have a fat
+                    crush
+                    on
+                    them back then when I was a wee lil kid). Unironically, this game is what helped me come out to my
+                    sibling (lol).</div>
+                Since I did mention engaging with the fan content alot, I'm bound to ship something if it wasn't
+                obvious.
+                So here's my ship chart, if you're curious.
+                <div style="text-align: center;margin-top: 1.5%;"><img src="assets/forsaken ship.png" width="75%"
+                        style="border-radius: 5px;"><br>
+                    <a class="link" href="https://x.com/dedylant/status/2004893128684437876" target="_blank">Original
+                        image by @dedylant
+                        (Twitter)</a>
+                </div>
+            </div>
+        </div>
+        <div class="tab game" id="vsynth" style="display: none;">
+            <div class="header" dir="rtl">
+                <div onclick="openGame('main')" class="header-link interests" style="cursor: pointer;">go back to
+                    interests page</div>
+            </div>
+            <div class="content">
+                I mostly listen to songs with them, and I enjoy many characters within the voice synthesizer space.
+                I enjoy most of them, but my oshis are <a href="https://leur-404.com/" target="_blank">LeuR</a>, <a
+                    href="https://mechanicalgirl.jp/adachi-rei/" target="_blank">Adachi Rei</a>, and
+                the TOKYO6 group (<a href="https://tokyo6.tokyo/koharurikka/" target="_blank">Koharu Rikka</a>, <a
+                    href="https://tokyo6.tokyo/natsukikarin/" target="_blank">Natsuki Karin</a>, <a
+                    href="https://tokyo6.tokyo/hanakumachifuyu/" target="_blank">Hanakuma Chifuyu</a>).
+                <div class="comment">
+                    I enjoyed them ever since I was a kid, my first exposure to it was <a
+                        href="https://vocaloid.fandom.com/wiki/Reboot/JimmyThumb-P" target="_blank">Reboot by
+                        JimmyThumb-P</a>.
+                    I liked them ever since! My first favorite is <a
+                        href="https://piapro.net/intl/en_character.html#ch_rin" target="_blank">Kagamine Rin</a>, which
+                    is where I got
+                    my first ever
+                    online alias from. As of now, my favorite producers are <a href="https://vocadb.net/Ar/64141"
+                        target="_blank">NAKISO</a> and <a href="https://vocadb.net/Ar/66139" target="_blank">r-906</a>.
+                    These are my current favorite songs, you should give them a listen!
+                    <ul>
+                        <li><a href="https://vocadb.net/Al/31551" target="_blank">花めかない</a></li>
+                        <li><a href="https://vocadb.net/Al/38983" target="_blank">絶交</a></li>
+                        <li><a href="https://vocadb.net/Al/46268" target="_blank">ユメミ</a></li>
+                        <li><a href="https://vocadb.net/Al/45569" target="_blank">匙ノ咒</a></li>
+                    </ul>
+                </div>
+                <div style="text-align: center;margin-top: 1.5%;background-color: var(--surface-1);border-radius: 3px;">
+                    <img src="assets/vsynth favs.png" width="100%" style="border-radius: 5px;">
+                </div>
+            </div>
+        </div>
+        <script src="script/theme.js"></script>
+        <script src="script/interests.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons-react/dist/index.umd.min.js"></script>
+        <!--stuff for tippy.js-->
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+        <script src="https://unpkg.com/tippy.js@6"></script>
+        <script>
+            tippy('#pjm', {
+                content: 'I played Lobotomy Corp, finished Library of Ruina and Limbus Company (as of Canto 9). I read Distortion Detective, and I am still trying to find time to read Leviathan. I REALLY really enjoy the story for these games, the topics and references (and the way they are explored) are amazing. The character designs are very nice too.',
+                theme: 'basic',
+            })
+            tippy('#nso', {
+                content: 'I heavily relate with Ame. The game and its storyline is quite realistic, Ame is also written very well, I could relate with her on many things. I enjoyed the "dating game" spin off too as it made me enjoy her character more.',
+                theme: 'basic',
+            });
+            tippy('#kmtt', {
+                content: 'Super comfy aesthetic and amazing art, the game touches on really heavy topics surrounding death and other "darker" topics. The characters present are not perfect people, but that is what makes it easy to symphatize with certain characters.',
+                theme: 'basic',
+            });
+            tippy('#utdr', {
+                content: 'The greatest experience I had playing a game, super immersive story and the characters are so so very well written. Undertale is also my childhood (I used to watch gameplays of it when I was a kid), though I prefer Deltarune more.',
+                theme: 'basic',
+            });
+            tippy('#bt', {
+                content: 'I enjoyed the game mechanics, really fun even though it might not be that replayable. I am kind of invested in the current story, also, the player is a BUM.',
+                theme: 'basic',
+            });
+        </script>
+</body>
+
+</html>

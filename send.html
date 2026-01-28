@@ -1,0 +1,63 @@
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+
+    <!--basic embed-->
+    <meta property="og:title" content="Mailbox">
+    <meta property="og:description" content="Send messages or drawings!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://crowoftheday.github.io/">
+    <meta property="og:image" content="https://crowoftheday.github.io/assets/profile.png">
+    <!--twitter embed-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Mailbox">
+    <meta name="twitter:description" content="Send messages or drawings!">
+    <meta name="twitter:image" content="https://crowoftheday.github.io/assets/profile.png">
+
+    <title>Mailbox</title>
+    <link rel="icon" href="assets/favicon.ico"">
+    <style>
+        .form {
+            width: 100%;
+            height: 40%;
+            border-radius: 3px 3px 0 0;
+        }
+
+        @media only screen and (max-width: 1080px) {
+            .form {
+                height: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class=" container">
+    <button type="button" data-theme-toggle aria-label="Change to light theme" id="theme"></button>
+    <div class="tab">
+        <div class="header" dir="rtl">
+            <a href="https://crowoftheday.github.io" class="header-link home">home</a> |
+            <a href="byi" class="header-link byi">byi</a> |
+            <a href="about" class="header-link about">about</a> |
+            <a href="interests" class="header-link interests">interest</a> |
+            <b>send</b> |
+            <a href="https://github.com/CrowOfTheDay/crowoftheday.github.io" class="header-link source">source</a>
+        </div>
+        <div class="content">
+            <iframe src="https://forms.gle/DdLSPk4sKSTSsjCFA" class="form"></iframe>
+            <div
+                style="background-color: var(--surface-0);text-align: center;width: 98.5%;padding: 1%;border-radius: 0 0 3px 3px;">
+                <a href="drawbox">Send a drawing!</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="script/theme.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons-react/dist/index.umd.min.js"></script>
+    </body>
+
+</html>

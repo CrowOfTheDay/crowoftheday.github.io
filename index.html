@@ -1,0 +1,99 @@
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+
+    <!--basic embed-->
+    <meta property="og:title" content="Taph's Webpage">
+    <meta property="og:description"
+        content="A website which serves as an introduction to the user @crowoftheday and other stuff.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://crowoftheday.github.io/">
+    <meta property="og:image" content="https://crowoftheday.github.io/assets/profile.png">
+    <!--twitter embed-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Taph's Webpage">
+    <meta name="twitter:description"
+        content="A website which serves as an introduction to the user @crowoftheday and other stuff.">
+    <meta name="twitter:image" content="https://crowoftheday.github.io/assets/profile.png">
+
+    <title>Home</title>
+    <link rel="icon" href="assets/favicon.ico"">
+
+    <link rel=" me" href="https://en.pronouns.page/u/subspaced">
+    <style>
+        .friends {
+            display: flex;
+            height: 360px;
+            width: 100%;
+            flex-wrap: wrap;
+            overflow-x: scroll;
+            padding-top: 1%;
+        }
+
+        .friend {
+            border-radius: 5px;
+            padding: 1px;
+            max-height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class=" container">
+        <button type="button" data-theme-toggle aria-label="Change to light theme" id="theme"></button>
+        <div class="tab">
+            <div class="header" dir="rtl">
+                <b>home</b> |
+                <a href="byi" class="header-link byi">byi</a> |
+                <a href="about" class="header-link about">about</a> |
+                <a href="interests" class="header-link interests">interest</a> |
+                <a href="send" class="header-link send">send</a> |
+                <a href="https://github.com/CrowOfTheDay/crowoftheday.github.io" class="header-link source">source</a>
+            </div>
+            <div class="content">
+                <a href="https://x.com/doczotic/status/1984446575339528669" target="_blank"><img
+                        src="assets/profile.png" style="float: left;width: 18%;padding: 1%;padding-right: 2%"></a>
+                <h1>Taph &lt;3</h1>
+                Welcome!
+                Feel free to look around, there's alot of stuff here, I think.
+                Remember to check out the <b>"byi"</b> page first before proceeding through the entire site,
+                so you can decide whether to interact with me or not.
+                <br><br>
+                This site is mainly for desktop and not mobile,
+                it <i>might</i> look weird on mobile but it should be viewable.
+                I tried to make it as readable as possible for everyone,
+                if there's something hard to see for you, please <b>send</b> something to me and tell what's wrong!
+                <br><br>
+                <b>Check out my friends below, you can click to be redirected to their pages!</b>
+                <span style="font-size: 0.5em;color: var(--subtext-0);text-decoration: underline;" id="add">[?]</span>
+                <div class="friends">
+                    <a href="https://skytoast.straw.page/" target="_blank">
+                        <div class="friend">
+                            <img src="assets/friends/toast.png" class="friend" height="200vw" id="toast">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script/theme.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons-react/dist/index.umd.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script>
+        tippy('#add', {
+            content: 'I will only add you if you are a close friend of mine, and if you have given me explicit permission to feature you here. Please ask if you want to be included here!',
+            theme: 'basic',
+        });
+        tippy('#toast', {
+            content: 'My very dear friend, she is like a younger sister to me! Also a really huge Akita Neru fan, she is also the reason I am a big fan of the TOKYO6 voice synthesizers!',
+            theme: 'basic',
+        });
+    </script>
+</body>
+
+</html>
